@@ -16,6 +16,7 @@
 		819E1D171D5D9B220091885B /* CocoaObserverPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 819E1D161D5D9B220091885B /* CocoaObserverPattern.m */; };
 		819E1D1A1D5D9EF40091885B /* RandomGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 819E1D191D5D9EF40091885B /* RandomGenerator.m */; };
 		819E1D1D1D5DAD700091885B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 819E1D1C1D5DAD700091885B /* Constants.m */; };
+		81FCF8321D8B11CA00A808BB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 81FCF8311D8B11CA00A808BB /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		819E1D191D5D9EF40091885B /* RandomGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomGenerator.m; sourceTree = "<group>"; };
 		819E1D1B1D5DA7AE0091885B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		819E1D1C1D5DAD700091885B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		81FCF8311D8B11CA00A808BB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		819E1CF01D5D94D50091885B = {
 			isa = PBXGroup;
 			children = (
+				81FCF8311D8B11CA00A808BB /* LICENSE */,
 				819E1CFB1D5D94D50091885B /* cocoa_observer_pattern */,
 				819E1CFA1D5D94D50091885B /* Products */,
 			);
@@ -169,6 +172,7 @@
 			files = (
 				819E1D0C1D5D94D50091885B /* LaunchScreen.storyboard in Resources */,
 				819E1D091D5D94D50091885B /* Assets.xcassets in Resources */,
+				81FCF8321D8B11CA00A808BB /* LICENSE in Resources */,
 				819E1D071D5D94D50091885B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +340,7 @@
 				819E1D121D5D94D50091885B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
