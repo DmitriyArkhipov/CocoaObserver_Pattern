@@ -13,6 +13,9 @@
 		819E1D071D5D94D50091885B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819E1D051D5D94D50091885B /* Main.storyboard */; };
 		819E1D091D5D94D50091885B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819E1D081D5D94D50091885B /* Assets.xcassets */; };
 		819E1D0C1D5D94D50091885B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819E1D0A1D5D94D50091885B /* LaunchScreen.storyboard */; };
+		819E1D171D5D9B220091885B /* CocoaObserverPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 819E1D161D5D9B220091885B /* CocoaObserverPattern.m */; };
+		819E1D1A1D5D9EF40091885B /* RandomGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 819E1D191D5D9EF40091885B /* RandomGenerator.m */; };
+		819E1D1D1D5DAD700091885B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 819E1D1C1D5DAD700091885B /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		819E1D081D5D94D50091885B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		819E1D0B1D5D94D50091885B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		819E1D0D1D5D94D50091885B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		819E1D151D5D9B000091885B /* CocoaObserverPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaObserverPattern.h; sourceTree = "<group>"; };
+		819E1D161D5D9B220091885B /* CocoaObserverPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaObserverPattern.m; sourceTree = "<group>"; };
+		819E1D181D5D9EF40091885B /* RandomGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomGenerator.h; sourceTree = "<group>"; };
+		819E1D191D5D9EF40091885B /* RandomGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomGenerator.m; sourceTree = "<group>"; };
+		819E1D1B1D5DA7AE0091885B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		819E1D1C1D5DAD700091885B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		819E1CFB1D5D94D50091885B /* cocoa_observer_pattern */ = {
 			isa = PBXGroup;
 			children = (
+				819E1D131D5D95440091885B /* Model */,
 				819E1CFF1D5D94D50091885B /* AppDelegate.h */,
 				819E1D001D5D94D50091885B /* AppDelegate.m */,
 				819E1D021D5D94D50091885B /* ViewController.h */,
@@ -77,6 +87,27 @@
 				819E1CFD1D5D94D50091885B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		819E1D131D5D95440091885B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				819E1D1F1D5DAE260091885B /* Constants */,
+				819E1D181D5D9EF40091885B /* RandomGenerator.h */,
+				819E1D191D5D9EF40091885B /* RandomGenerator.m */,
+				819E1D151D5D9B000091885B /* CocoaObserverPattern.h */,
+				819E1D161D5D9B220091885B /* CocoaObserverPattern.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		819E1D1F1D5DAE260091885B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				819E1D1B1D5DA7AE0091885B /* Constants.h */,
+				819E1D1C1D5DAD700091885B /* Constants.m */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819E1D171D5D9B220091885B /* CocoaObserverPattern.m in Sources */,
 				819E1D041D5D94D50091885B /* ViewController.m in Sources */,
 				819E1D011D5D94D50091885B /* AppDelegate.m in Sources */,
 				819E1CFE1D5D94D50091885B /* main.m in Sources */,
+				819E1D1A1D5D9EF40091885B /* RandomGenerator.m in Sources */,
+				819E1D1D1D5DAD700091885B /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

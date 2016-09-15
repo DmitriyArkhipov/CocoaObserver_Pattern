@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "CocoaObserverPattern.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    Stock *stock = [[Stock alloc] init];
+    
+    Bank *bank = [[Bank alloc] initWithName:@"СБЕРБАНК" AndObservervable:stock];
+    Broker *broker = [[Broker alloc] initWithName:@"Петр Петрович" AndObservervable:stock];
+    
+    //имитация торгов
+    [stock margetGeneration];
+    
+    //брокер прекращает наблюдать за торгами
+    [broker stopTrade];
+    
+    //имитация торгов
+    [stock margetGeneration];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
